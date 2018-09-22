@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout row my-4>
-      <v-flex xs12 sm6 offset-sm1>
+      <v-flex xs12 sm6 offset-sm2>
         <h2>Meetups</h2>
       </v-flex>
     </v-layout>
