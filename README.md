@@ -1,4 +1,4 @@
-# full_project
+# Meetup-organizer
 
 > A Vue.js project
 
