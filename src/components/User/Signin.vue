@@ -45,10 +45,10 @@
                     </v-btn>
                     <br>
                     <br>
-                    <p class="text-xs-center">You have got a Google account?</p>
+                    <p class="text-xs-center">You already have a Google account?</p>
                     </div>
                     <div class="text-xs-center">
-                      <v-btn round color="red" dark :disabled="loading" :loading="loading" @click.prevent="onSigninGoogle">Login with Google&nbsp;
+                      <v-btn round color="red" dark :disabled="loading" :loading="loading" @click.prevent="onSigninGoogle">Sign in with Google&nbsp;
                         <i class="fab fa-google-plus-g"></i>
                         <span slot="loader" class="custom-loader">
                         <v-icon light>cached</v-icon>
@@ -58,7 +58,7 @@
                     <br>
                     <div class="text-xs-center">
                       <p>Forgot your password?</p>
-                      <v-btn round color="primary" dark :disabled="loading" :loading="loading" @click.prevent="onResetPassword">Reset Password By Email
+                      <v-btn round color="primary" dark :disabled="loading" :loading="loading" @click.prevent="onResetPassword">Reset password By Email
                         <v-icon right dark>email</v-icon>
                         <span slot="loader" class="custom-loader">
                         <v-icon light>cached</v-icon>
