@@ -71,9 +71,9 @@
                       </v-btn>
                     </div>
                     <br>
-                    <p class="text-xs-center">You have got a Google account?</p>
+                    <p class="text-xs-center">You already have a Google account?</p>
                     <div class="text-xs-center">
-                     <v-btn round color="red" dark :disabled="loading" :loading="loading" @click.prevent="onSigninGoogle">Login with Google&nbsp;
+                     <v-btn round color="red" dark :disabled="loading" :loading="loading" @click.prevent="onSigninGoogle">Sign up with Google&nbsp;
                        <i class="fab fa-google-plus-g"></i>
                        <span slot="loader" class="custom-loader">
                        <v-icon light>cached</v-icon>
