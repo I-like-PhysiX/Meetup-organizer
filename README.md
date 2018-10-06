@@ -1,6 +1,6 @@
-# Meetup-organizer
+# full_project
 
-> A Vuejs website, where only signed up users can register, create and modify existing meetups. Those people who don't have any permission can view these meetups. This website is designed for practicing and testing. Please do not spam! CAUTION! This website accepts fake and real (valid) email addresses. Please use the fake ones because "delete user" function is not implemented (yet)!
+> A Vue.js project
 
 ## Build Setup
 
