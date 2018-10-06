@@ -103,7 +103,7 @@
     },
     computed: {
       comparePasswords () {
-        return this.password !== this.confirmPassword ? 'invalid password' : ''
+        return this.password !== this.confirmPassword ? 'Passwords do not match' : true﻿
       },
       user () {
         return this.$store.getters.user
