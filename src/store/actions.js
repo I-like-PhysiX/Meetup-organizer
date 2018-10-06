@@ -46,7 +46,8 @@ export default {
             description: obj[key].description,
             imageUrl: obj[key].imageUrl,
             date: obj[key].date,
-            location: obj[key].location
+            location: obj[key].location,
+            creatorId: obj[key].creatorId
           })
         }
         commit('setLoadedMeetups', meetups)
@@ -65,7 +66,8 @@ export default {
       location: payload.location,
       description: payload.description,
       imageUrl: payload.imageUrl,
-      date: payload.date
+      date: payload.date,
+      creatorId: getters.user.id
     }
     let key
     firebase.database().ref('meetups').push(meetup)
