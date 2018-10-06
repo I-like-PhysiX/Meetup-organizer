@@ -41,10 +41,10 @@
      </v-btn>
 	  </v-toolbar-items>
      </v-toolbar>
-	<main>
-	 <router-view style="margin-bottom: 100px;"/>
+	<main
+	 <router-view mb-3/>
 	</main>
-  <v-footer dark height="auto" app>
+  <v-footer dark>
     <v-card class="flex" flat tile>
       <v-card-title class="indigo lighten-1">
         <v-layout row wrap>
