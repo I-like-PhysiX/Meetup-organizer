@@ -5,6 +5,14 @@
         <h2>Meetups</h2>
       </v-flex>
     </v-layout>
+    <v-layout row class="my-3">
+      <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
+        <v-toolbar dark class="red darken-2">
+        <v-toolbar-side-icon dark class="hidden-sm-and-up" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+        <v-text-field  class="ml-2" v-model="search" label="Searching by meetup title" hide-details dark></v-text-field>
+        </v-toolbar>
+      </v-flex>
+    </v-layout>
     <v-layout row wrap v-for="meetup in meetups" :key="meetup.id" class="mb-2">
       <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
         <v-card class="info">
@@ -45,12 +53,13 @@
   export default {
     data () {
       return {
-        userIsRegistered: false
+        search: '',
+        drawer: true
       }
     },
     computed: {
       meetups () {
-        return this.$store.getters.loadedMeetups
+        return this.$store.getters.loadedMeetups.filter( meetup => {return meetup.title.toLowerCase().includes(this.search.toLowerCase())})
       }
     }
   }
