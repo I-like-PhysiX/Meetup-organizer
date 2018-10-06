@@ -58,7 +58,7 @@
                     <br>
                     <div class="text-xs-center">
                       <p>Forgot your password?</p>
-                      <v-btn round color="primary" dark :disabled="loading" :loading="loading" @click.prevent="onResetPassword">Reset password By Email
+                      <v-btn round color="primary" dark :disabled="loading" :loading="loading" @click.prevent="onResetPassword">Reset password By email
                         <v-icon right dark>email</v-icon>
                         <span slot="loader" class="custom-loader">
                         <v-icon light>cached</v-icon>
