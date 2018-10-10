@@ -180,7 +180,15 @@ import * as firebase from 'firebase'
 					firebase.database().ref().child('users').child(key).child('registrations').on('child_added', snap => {
 						firebase.database().ref().child('meetups').child(snap.val()).once('value')
 							.then((data) => {
-								this.registered_meetups.push(data.val())
+								this.registered_meetups.push({
+                  id: data.key,
+                  title: data.val().title,
+                  description: data.val().description,
+                  imageUrl: data.val().imageUrl,
+                  date: data.val().date,
+                  location: data.val().location,
+                  creatorId: data.val().creatorId
+							   })
 							 })
 							 .catch(
 								(error) => {
